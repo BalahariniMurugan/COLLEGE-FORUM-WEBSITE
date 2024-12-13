@@ -1,0 +1,87 @@
+/* Admin Login Page Specific Styles */
+#admin-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 300px; /* Adjusted to provide more top padding */
+  /* //background-image: url('./stock-vector-hand-drawn-doodle-question-marks-1727032048.jpg'); Update this path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#admin-box form {
+  background-color: #7676c49c; /* Changed to light violet */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+#adminTitle {
+  font-size: 24px; /* Reduced font size */
+  margin-bottom: 20px; /* Space below the title */
+  color: #333;
+  font-weight: bold;
+}
+
+#error {
+  color: #d9534f; /* Bootstrap danger color */
+  margin-bottom: 15px; /* Space below error message */
+  font-size: 14px; /* Slightly reduced font size */
+}
+
+.user-box {
+  margin-bottom: 35px; /* Increased space between input fields */
+  position: relative;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 15px; /* Adjusted padding for input fields */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px; /* Reduced font size */
+}
+
+.user-box label {
+  position: absolute;
+  top: 15px; /* Adjusted position to match input padding */
+  left: 15px; /* Adjusted position to match input padding */
+  font-size: 16px; /* Adjusted font size */
+  color: #666;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.user-box input:focus + label,
+.user-box input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 15px;
+  font-size: 12px; /* Adjusted font size for floating label */
+  color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 18px; /* Padding for the button */
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px; /* Adjusted font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 14px; /* Adjusted font size */
+}

@@ -1,0 +1,119 @@
+/* Set the background color for the entire page */
+body {
+  background-color: #121212; /* Dark grey background */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styles for the signup container */
+#signup-box {
+  width: 350px;
+  margin: auto;
+  padding: 40px;
+  background: #1c1c1c; /* Dark background for the container */
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
+  text-align: center;
+}
+
+/* Title styles */
+#signupTitle {
+  margin-bottom: 20px;
+  color: #1e90ff; /* Blue color */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Input and select box styles */
+.user-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.user-box input,
+.user-box select {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: 1px solid #333; /* Dark border */
+  border-bottom: 1px solid #333; /* Darker border for bottom */
+  color: #fff; /* White text */
+  font-size: 16px;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.user-box input:focus,
+.user-box select:focus {
+  border-color: #1e90ff; /* Blue border on focus */
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  color: #fff; /* White text */
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label,
+.user-box select:focus ~ label,
+.user-box select:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #1e90ff; /* Blue label */
+  font-size: 12px;
+}
+
+/* Error message styles */
+.error {
+  color: #ff6347; /* Red color for error messages */
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+/* Button styles */
+#signupBtn,
+#loginBtn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1e90ff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#signupBtn:hover,
+#loginBtn:hover {
+  background-color: #1c86ee; /* Darker blue on hover */
+}
+
+/* Link styles */
+.no-underline {
+  color: #1e90ff; /* Blue text */
+  text-decoration: none;
+}
+
+.no-underline:hover {
+  text-decoration: underline;
+}
+
+/* User account section styles */
+.user-account {
+  margin-top: 20px;
+}
+
+h4 {
+  color: #fff; /* White text */
+  font-size: 14px;
+  margin-bottom: 10px;
+}

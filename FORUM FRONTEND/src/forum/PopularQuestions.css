@@ -1,0 +1,50 @@
+.popular-questions {
+    padding: 20px;
+    background-color: #424242; /* Dark grey background for the container */
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 20px auto;
+    color: #e3f2fd; /* Light blue text color for visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popular-questions h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #bbdefb; /* Light blue color */
+  }
+  
+  .popular-questions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .popular-questions li {
+    background-color: #616161; /* Grey background for the items */
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #64b5f6; /* Medium blue border */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #e3f2fd; /* Light blue text */
+  }
+  
+  .popular-questions li a {
+    color: #e3f2fd; /* Light blue text */
+    text-decoration: none;
+  }
+  
+  .popular-questions li a:hover {
+    text-decoration: underline;
+  }
+  
+  .thread-metrics {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #bbdefb; /* Light blue text */
+  }
+  
+  .thread-metrics span {
+    margin-right: 10px;
+  }
+  

@@ -1,0 +1,141 @@
+/* General Thread Styling */
+.thread {
+  padding: 20px;
+  background-color: #1f1919;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.thread:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #151313;
+}
+
+.thread h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f1f1f1; /* Light gray for better contrast */
+}
+
+/* List Group Styling */
+.list-group {
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  background-color: #0d0404;
+  border: 1px solid #0a0909;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: #e0e0e0; /* Light gray for text */
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #1f1f1f; /* Slightly lighter dark gray */
+  border-color: #333;
+}
+
+.list-group-item p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.list-group-item small {
+  color: #888; /* Medium gray for less important text */
+}
+
+/* Pinned and Locked Styles */
+.pinned {
+  border-left: 5px solid #ffc107; /* Amber for pinned items */
+}
+
+.locked {
+  background-color: #343a40; /* Darker gray for locked items */
+  color: #adb5bd; /* Light gray text for locked items */
+}
+
+/* Tags Styling */
+.tags {
+  margin-top: 15px;
+}
+
+.tags .badge {
+  margin-right: 5px;
+  font-size: 0.9rem;
+  background-color: #007bff; /* Blue for tags */
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.tags .badge:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Sort Options Styling */
+.sort-options {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sort-options label {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #ddd; /* Light gray for labels */
+}
+
+.sort-options select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.sort-options select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+/* Post Creation Form Styling */
+.post-creation-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #1f1f1f; /* Darker gray background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-creation-form textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333; /* Dark gray for text in textarea */
+  background-color: #fff; /* White background for readability */
+  resize: vertical;
+}
+
+.post-creation-form button {
+  background-color: #007bff; /* Blue button */
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.post-creation-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05);
+}

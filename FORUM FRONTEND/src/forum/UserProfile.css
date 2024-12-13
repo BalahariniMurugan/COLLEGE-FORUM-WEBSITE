@@ -1,0 +1,18 @@
+/* UserProfile.css */
+.user-profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .user-profile h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .user-profile p {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+  }

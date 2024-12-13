@@ -1,0 +1,118 @@
+/* Set the background color for the entire page */
+body {
+  background-color: #121212; /* Dark grey background */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styles for the login container */
+#login-box {
+  width: 360px;
+  padding: 40px;
+  position: relative;
+  background: #1c1c1c; /* Dark background for the container */
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* Title styles */
+#loginTitle {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1e90ff; /* Blue color */
+}
+
+/* Input and select box styles */
+.user-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.user-box input, .user-box select {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #333; /* Dark border */
+  border-radius: 5px;
+  background: #2c2c2c; /* Dark input background */
+  color: #fff; /* White text */
+  transition: border-color 0.3s;
+}
+
+.user-box input:focus, .user-box select:focus {
+  border-color: #1e90ff; /* Blue border on focus */
+  outline: none;
+}
+
+/* Label styles */
+.user-box label {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  padding: 0 5px;
+  background: #1c1c1c; /* Dark background */
+  font-size: 16px;
+  color: #fff; /* White text */
+  transition: 0.3s;
+}
+
+.user-box input:focus + label,
+.user-box input:valid + label,
+.user-box select:focus + label,
+.user-box select:valid + label {
+  top: -15px;
+  left: 10px;
+  color: #1e90ff; /* Blue label */
+  font-size: 12px;
+}
+
+/* Button styles */
+button {
+  width: 100%;
+  background: #1e90ff; /* Blue background */
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #fff; /* White text */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #1c86ee; /* Darker blue on hover */
+}
+
+/* Error message styles */
+.error {
+  color: #ff6347; /* Red color for error messages */
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* User account section styles */
+.user-account {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#signupBtn {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#signupBtn a {
+  color: #1e90ff; /* Blue text */
+  text-decoration: none;
+}
+
+#signupBtn a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,55 @@
+/* src/admin/Table.css */
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.admin-table th {
+  background-color: #4CAF50; /* Dark green background for headers */
+  color: white; /* White text for headers */
+  font-weight: bold; /* Bold text for headers */
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey background for even rows */
+}
+
+.admin-table tr:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd rows */
+}
+
+.admin-table tr:hover {
+  background-color: #ddd; /* Grey background for hovered rows */
+}
+
+.admin-table th:hover {
+  background-color: #45a049; /* Darker green background for hovered headers */
+}
+
+.admin-table td:hover {
+  background-color: #e6e6e6; /* Slightly darker background for hovered cells */
+}
+
+.admin-table td {
+  color: #333; /* Dark grey text for cells */
+}
+
+.admin-table tr:hover td {
+  color: #000; /* Black text for hovered rows */
+}
+
+.admin-table caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-size: 14px;
+  color: #777;
+}

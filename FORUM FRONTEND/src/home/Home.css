@@ -1,0 +1,208 @@
+/* Home.css */
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  transition: all 0.3s ease;
+}
+
+.profile-icon:hover {
+  border-color: #f39c12;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+@keyframes slide-vertical {
+  0% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+h1, p {
+  color: #110707dd;
+  position: relative;
+  z-index: 3;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-image: url("./stock-vector-hand-drawn-doodle-question-marks-1727032048.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  animation: slide-vertical 10s linear infinite;
+  position: relative;
+}
+
+.main-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  #7676c49c;
+  z-index: 1;
+}
+
+.blur-circle1, .blur-circle2 {
+  position: absolute;
+  border-radius: 50%;
+  background: #7676c49c;
+  z-index: 2;
+}
+
+.blur-circle1 {
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  left: -50px;
+}
+
+.blur-circle2 {
+  width: 300px;
+  height: 300px;
+  bottom: -100px;
+  right: -100px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  z-index: 3;
+}
+
+.navbar .logo-image {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar .logo-text {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333;
+}
+
+.navbar .navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .navbar-item {
+  margin-left: 20px;
+}
+
+.navbar .navbar-item a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-item a:hover {
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.landing-page {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  flex: 1;
+  min-height: calc(100vh - 80px); /* Ensure it covers the full viewport minus the navbar height */
+}
+
+.landing-page .content {
+  text-align: center;
+  padding: 150px 20px;
+}
+
+.landing-page .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.landing-page .info {
+  max-width: 500px;
+  position: relative;
+  z-index: 3;
+}
+
+.landing-page .info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.landing-page .info p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.landing-page .info button {
+  padding: 10px; /* Adjust padding for a smaller button */
+  font-size: 1rem; /* Adjust font size */
+  border: none;
+  background-color: #151212;
+  color: #ffffffa9; /* Ensure text is visible */
+  border-radius: 4px; /* Optional: Add some rounding to the button corners */
+  cursor: pointer; /* Optional: Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Optional: Smooth transition on hover */
+  display: inline-block; /* Ensure button width fits its content */
+  width: auto; /* Make button width auto to fit content */
+}
+
+.landing-page .info button:hover {
+  background-color: #333; /* Optional: Change color on hover */
+}

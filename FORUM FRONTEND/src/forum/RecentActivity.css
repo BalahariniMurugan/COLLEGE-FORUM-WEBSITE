@@ -1,0 +1,46 @@
+.recent-activity {
+    padding: 20px;
+    background-color: #424242; /* Dark grey background for the container */
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 20px auto;
+    color: #e3f2fd; /* Light blue text color for visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .recent-activity h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #bbdefb; /* Light blue color */
+  }
+  
+  .recent-activity ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recent-activity li {
+    background-color: #616161; /* Grey background for the items */
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #64b5f6; /* Medium blue border */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #e3f2fd; /* Light blue text */
+  }
+  
+  .recent-activity li a {
+    color: #e3f2fd; /* Light blue text */
+    text-decoration: none;
+  }
+  
+  .recent-activity li a:hover {
+    text-decoration: underline;
+  }
+  
+  .thread-activity {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #bbdefb; /* Light blue text */
+  }
+  
